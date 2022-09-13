@@ -61,8 +61,6 @@ def get_current_administrator(
         )
 
     current_endpoint = request.url.path.replace(settings.ROOT_PATH, "").upper()
-
-    print(current_endpoint)
     allowed_endpoints = get_allowed_endpoints(db, administrator.role_id)
 
     if current_endpoint not in allowed_endpoints:

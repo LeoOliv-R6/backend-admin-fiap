@@ -1,7 +1,8 @@
+uvicorn
 fastapi
 python-multipart
-pydantic
 pydantic[email]
+pydantic
 Jinja2
 SQLAlchemy
 alembic
